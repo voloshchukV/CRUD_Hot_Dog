@@ -76,7 +76,8 @@ function handleValidationError(err,body){
         switch(err.errors[field].path) {
             case 'Title':
                 body['TitleError']=err.errors[field].message;
-                break;
+            break;
+                                 
             default:
                 break;
 

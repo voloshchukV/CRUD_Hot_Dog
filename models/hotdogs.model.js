@@ -6,10 +6,10 @@ var hotdogsSchema = new mongoose.Schema({
         required: 'This field is required.'
     },
     Length: {
-        type: String
+        type: String,
     },
     Weight: {
-        type: String
+        type: String,
     }
 });
 
