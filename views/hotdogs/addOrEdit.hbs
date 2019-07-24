@@ -1,0 +1,29 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/hotdogs" method="POST" autocomplete="off">
+<input type="hidden" name="_id" value="{{hotdogs._id}}">
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" name="Title" placeholder="Title" value="{{hotdogs.Title}}">
+        <div class="text-danger">
+            {{hotdogs.TitleError}}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Length</label>
+        <input type="text" class="form-control" name="Length" placeholder="Length"  value="{{hotdogs.Length}}">
+    </div>
+
+    <div class="form-group">
+        <label>Weight</label>
+        <input type="text" class="form-control" name="Weight" placeholder="Weight" value="{{hotdogs.Weight}}">
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-warning"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-info" href="/hotdogs/list"><i class="fa fa-list-alt"></i>  View All</a>
+    </div>
+
+    
+</form>
